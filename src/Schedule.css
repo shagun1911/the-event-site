@@ -12,7 +12,7 @@
   margin-bottom: 20px;
   color: #2c3e50;
   text-transform: uppercase;
-  border-bottom: 3px solid #3498db;
+  border-bottom: 3px solid #ff2c5e;
   display: inline-block;
   padding-bottom: 8px;
 }
@@ -33,7 +33,8 @@ button {
   font-size: 14px;
   font-weight: 600;
   color: #ffffff;
-  background-color: #3498db;
+  background-color: #a5052a;
+
   border: none;
   border-radius: 30px;
   cursor: pointer;
@@ -48,8 +49,9 @@ button:hover {
 }
 
 button.active {
-  background-color: #7dd1f5;
   font-weight: bold;
+  background-color: #e80d40;
+
   box-shadow: 0 6px 25px rgba(35, 110, 156, 0.5);
 }
 
@@ -69,7 +71,7 @@ button.active {
 }
 
 .schedule-table thead {
-  background: #3498db;
+  background-color: #ff2c5e;
   color: #ffffff;
 }
 

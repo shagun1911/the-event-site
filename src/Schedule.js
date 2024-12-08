@@ -222,7 +222,7 @@ const Schedule = () => {
   return (
     <section id="schedule">
       <div className="schedule-container">
-        <h2 className="schedule-heading">Training Schedule</h2>
+        <h2 className="schedule-heading">Schedule</h2>
         <div className="batch-buttons">
           <button
             className={activeBatch === "batch1" ? "active" : ""}
