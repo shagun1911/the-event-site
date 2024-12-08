@@ -70,13 +70,10 @@ function App() {
         </div>
       </section>
 
-      {/* Venue Section */}
       <VenueSection />
       <Schedule />
-
-      {/* Speakers Section */}
-
       <SpeakersSection />
+
       <section id="location">
         <div className="map-container">
           <h3>Location</h3>
