@@ -18,7 +18,19 @@ function App() {
         <nav>
           <ul className="nav-links">
             <li>
-              <button className="buy-tickets">Register</button>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#venue">Venue</a>
+            </li>
+            <li>
+              <a href="#speakers">Speakers</a>
+            </li>
+            <li>
+              <a href="#schedule">Schedule</a>
+            </li>
+            <li>
+              <a href="#connect">Connect</a>
             </li>
           </ul>
         </nav>
@@ -27,26 +39,23 @@ function App() {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
-          <h1>
-            Redefining Innovative Strategies in Education : A Journey Towards
-            Saksham Bharat
-          </h1>
+          <h1>Redefining Innovative Strategies in Education :</h1>
+          <h1> A Journey Towards Saksham Bharat</h1>
           <p>
-            10-12 December, Motilal Nehru National Institute of Technology
-            Allahabad
+            09-20 December
             <p>
-              Prayagraj – 211004, India www.mnnit.ac.in [An Institute of
-              National Importance]
+              Motilal Nehru National Institute of Technology Allahabad,
+              Prayagraj
             </p>
           </p>
-          <a href="#buy-tickets" className="cta-button">
-            Register
+          <a href="#download-app" className="cta-button">
+            Download App
           </a>
         </div>
       </section>
 
       {/* About the Event */}
-      <section className="about">
+      <section id="about" className="about">
         <div className="about-content">
           <h2>About The R.I.S.E. Program </h2>
           <p>
@@ -69,7 +78,7 @@ function App() {
       <section className="event-info">
         <div className="info-box">
           <h3>Where</h3>
-          <p>Executive Development Centre MMNIT</p>
+          <p>Executive Development Centre, MNNIT Allahbad</p>
         </div>
         <div className="info-box">
           <h3>When</h3>
@@ -107,7 +116,7 @@ function App() {
 
         {/* Map Section */}
         <div className="map-container">
-          <h3>Location on Map</h3>
+          <h3>Location</h3>
 
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31780.785464529556!2d81.84837667611749!3d25.43584174427693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39818042f8e283f9%3A0xf3be4a7d9fd1d9c9!2sMotilal%20Nehru%20National%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1638497648691!5m2!1sen!2sin"
@@ -121,7 +130,7 @@ function App() {
       </section>
 
       {/* Speakers Section */}
-      <section className="speakers">
+      <section id="speakers">
         <h2>Co-ordinators</h2>
         <div className="speakers-container">
           <div className="speaker">
@@ -138,11 +147,11 @@ function App() {
               <p>
                 <span className="bold">Mobile No:</span> 9005688273
               </p>
-              <p>
+              {/* <p>
                 <span className="bold">Address:</span> Department of
                 Biotechnology, Motilal Nehru National Institute of Technology
                 Allahabad, Prayagraj – 211004, India
-              </p>
+              </p> */}
             </div>
           </div>
           <div className="speaker">
@@ -174,10 +183,10 @@ function App() {
               <p>
                 <span className="bold">Mobile No:</span> 9580370547
               </p>
-              <p>
+              {/* <p>
                 <span className="bold">Address:</span> Cograd Tech Village,
                 Noida
-              </p>
+              </p> */}
             </div>
           </div>
           <div className="speaker">
@@ -193,156 +202,192 @@ function App() {
               <p>
                 <span className="bold">Mobile No:</span> 8077981379
               </p>
-              <p>
+              {/* <p>
                 <span className="bold">Address:</span> Cograd Tech Village,
                 Noida
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
       </section>
 
       <div className="schedule-container">
-  <h2 className="schedule-heading">Training Schedule</h2>
+        <h2 className="schedule-heading">Training Schedule</h2>
 
-  {/* Introductory Note for Batch Information */}
-  <p className="schedule-note">
-    The 5-day training program will be conducted in two batches:
-  </p>
-  <ul className="batch-info">
-    <li><strong>Batch 1:</strong> 9th to 13th December</li>
-    <li><strong>Batch 2:</strong> 16th to 20th December</li>
-  </ul>
+        {/* Introductory Note for Batch Information */}
+        <p className="schedule-note">
+          The 5-day training program will be conducted in two batches:
+        </p>
+        <ul className="batch-info">
+          <li>
+            <strong>Batch 1:</strong> 9th to 13th December
+          </li>
+          <li>
+            <strong>Batch 2:</strong> 16th to 20th December
+          </li>
+        </ul>
 
-  {/* Header with buttons for each day */}
-  <div className="schedule-header">
-    <button
-      onClick={() => toggleSessions("day1")}
-      className={activeDay === "day1" ? "active" : ""}
-    >
-      Day 1
-    </button>
-    <button
-      onClick={() => toggleSessions("day2")}
-      className={activeDay === "day2" ? "active" : ""}
-    >
-      Day 2
-    </button>
-    <button
-      onClick={() => toggleSessions("day3")}
-      className={activeDay === "day3" ? "active" : ""}
-    >
-      Day 3
-    </button>
-    <button
-      onClick={() => toggleSessions("day4")}
-      className={activeDay === "day4" ? "active" : ""}
-    >
-      Day 4
-    </button>
-    <button
-      onClick={() => toggleSessions("day5")}
-      className={activeDay === "day5" ? "active" : ""}
-    >
-      Day 5
-    </button>
-  </div>
+        {/* Header with buttons for each day */}
+        <div className="schedule-header">
+          <button
+            onClick={() => toggleSessions("day1")}
+            className={activeDay === "day1" ? "active" : ""}
+          >
+            Day 1
+          </button>
+          <button
+            onClick={() => toggleSessions("day2")}
+            className={activeDay === "day2" ? "active" : ""}
+          >
+            Day 2
+          </button>
+          <button
+            onClick={() => toggleSessions("day3")}
+            className={activeDay === "day3" ? "active" : ""}
+          >
+            Day 3
+          </button>
+          <button
+            onClick={() => toggleSessions("day4")}
+            className={activeDay === "day4" ? "active" : ""}
+          >
+            Day 4
+          </button>
+          <button
+            onClick={() => toggleSessions("day5")}
+            className={activeDay === "day5" ? "active" : ""}
+          >
+            Day 5
+          </button>
+        </div>
 
-  {/* Content for the selected day */}
-  <div className="schedule-content">
-    {activeDay === "day1" && (
-      <div className="sessions">
-        <h3>Day 1: Inauguration and Orientation</h3>
-        <p><strong>Session 1:</strong> Competency Frameworks Overview</p>
-        <p>- Principles and Practices of Competency-Based Education</p>
-        <p>- Understanding and Applying Competency-Based Frameworks</p>
-        <p><strong>Session 2:</strong> Developing Curriculum & Assessments</p>
-        <p>- Tools and Techniques for Curriculum Development</p>
-        <p>- Designing Effective Curriculum and Assessments</p>
+        {/* Content for the selected day */}
+        <div className="schedule-content">
+          {activeDay === "day1" && (
+            <div className="sessions">
+              <h3>Day 1: Inauguration and Orientation</h3>
+              <p>
+                <strong>Session 1:</strong> Competency Frameworks Overview
+              </p>
+              <p>- Principles and Practices of Competency-Based Education</p>
+              <p>- Understanding and Applying Competency-Based Frameworks</p>
+              <p>
+                <strong>Session 2:</strong> Developing Curriculum & Assessments
+              </p>
+              <p>- Tools and Techniques for Curriculum Development</p>
+              <p>- Designing Effective Curriculum and Assessments</p>
+            </div>
+          )}
+
+          {activeDay === "day2" && (
+            <div className="sessions">
+              <h3>Day 2: Digital Pedagogy Innovations</h3>
+              <p>
+                <strong>Session 3:</strong> Leveraging Technology for Effective
+                Teaching
+              </p>
+              <p>
+                - Digital Tools, Platforms, and AI-Based Learning Applications
+              </p>
+              <p>
+                <strong>Session 4:</strong> AI in the Classroom
+              </p>
+              <p>- Practical Applications of AI and Digital Tools</p>
+              <p>- Hands-On Training with AI Tools</p>
+              <p>
+                <strong>Session 5:</strong> Digital Classroom Management
+              </p>
+              <p>- Managing a Tech-Enhanced Classroom</p>
+              <p>- Best Practices for Digital Engagement</p>
+            </div>
+          )}
+
+          {activeDay === "day3" && (
+            <div className="sessions">
+              <h3>Day 3: Social-Emotional Learning (SEL)</h3>
+              <p>
+                <strong>Session 6:</strong> Fostering Emotional and Social
+                Competencies
+              </p>
+              <p>- Techniques for Building SEL Skills in Students</p>
+              <p>
+                <strong>Session 7:</strong> Building Inclusive Classrooms
+              </p>
+              <p>- Strategies for Inclusive Education</p>
+              <p>- Creating a Supportive and Inclusive Learning Environment</p>
+              <p>
+                <strong>Session 8:</strong> Reflective Practices and
+                Self-Assessment
+              </p>
+              <p>- Methods for Teacher Self-Assessment</p>
+              <p>- Enhancing Teaching Effectiveness Through Reflection</p>
+            </div>
+          )}
+
+          {activeDay === "day4" && (
+            <div className="sessions">
+              <h3>Day 4: Continuous Professional Development</h3>
+              <p>
+                <strong>Session 9:</strong> Professional Growth Plans
+              </p>
+              <p>- Designing and Implementing Personalized Development Plans</p>
+              <p>
+                <strong>Session 10:</strong> Innovative Teaching Strategies
+              </p>
+              <p>- New Pedagogical Approaches</p>
+              <p>- Project-Based and Inquiry-Based Learning</p>
+              <p>
+                <strong>Session 11:</strong> Experiential Learning Techniques
+              </p>
+              <p>- Hands-on Learning Approaches</p>
+              <p>- Techniques for Experiential Learning</p>
+            </div>
+          )}
+
+          {activeDay === "day5" && (
+            <div className="sessions">
+              <h3>Day 5: Collaborative Learning and Feedback</h3>
+              <p>
+                <strong>Session 12:</strong> Team Activities and Peer Feedback
+              </p>
+              <p>- Enhancing Collaboration Skills Among Teachers</p>
+              <p>
+                <strong>Closing Session:</strong> Review and Certification
+              </p>
+              <p>- Program Review and Feedback</p>
+              <p>- Evaluation, Feedback, and Certification</p>
+            </div>
+          )}
+        </div>
       </div>
-    )}
 
-    {activeDay === "day2" && (
-      <div className="sessions">
-        <h3>Day 2: Digital Pedagogy Innovations</h3>
-        <p><strong>Session 3:</strong> Leveraging Technology for Effective Teaching</p>
-        <p>- Digital Tools, Platforms, and AI-Based Learning Applications</p>
-        <p><strong>Session 4:</strong> AI in the Classroom</p>
-        <p>- Practical Applications of AI and Digital Tools</p>
-        <p>- Hands-On Training with AI Tools</p>
-        <p><strong>Session 5:</strong> Digital Classroom Management</p>
-        <p>- Managing a Tech-Enhanced Classroom</p>
-        <p>- Best Practices for Digital Engagement</p>
-      </div>
-    )}
-
-    {activeDay === "day3" && (
-      <div className="sessions">
-        <h3>Day 3: Social-Emotional Learning (SEL)</h3>
-        <p><strong>Session 6:</strong> Fostering Emotional and Social Competencies</p>
-        <p>- Techniques for Building SEL Skills in Students</p>
-        <p><strong>Session 7:</strong> Building Inclusive Classrooms</p>
-        <p>- Strategies for Inclusive Education</p>
-        <p>- Creating a Supportive and Inclusive Learning Environment</p>
-        <p><strong>Session 8:</strong> Reflective Practices and Self-Assessment</p>
-        <p>- Methods for Teacher Self-Assessment</p>
-        <p>- Enhancing Teaching Effectiveness Through Reflection</p>
-      </div>
-    )}
-
-    {activeDay === "day4" && (
-      <div className="sessions">
-        <h3>Day 4: Continuous Professional Development</h3>
-        <p><strong>Session 9:</strong> Professional Growth Plans</p>
-        <p>- Designing and Implementing Personalized Development Plans</p>
-        <p><strong>Session 10:</strong> Innovative Teaching Strategies</p>
-        <p>- New Pedagogical Approaches</p>
-        <p>- Project-Based and Inquiry-Based Learning</p>
-        <p><strong>Session 11:</strong> Experiential Learning Techniques</p>
-        <p>- Hands-on Learning Approaches</p>
-        <p>- Techniques for Experiential Learning</p>
-      </div>
-    )}
-
-    {activeDay === "day5" && (
-      <div className="sessions">
-        <h3>Day 5: Collaborative Learning and Feedback</h3>
-        <p><strong>Session 12:</strong> Team Activities and Peer Feedback</p>
-        <p>- Enhancing Collaboration Skills Among Teachers</p>
-        <p><strong>Closing Session:</strong> Review and Certification</p>
-        <p>- Program Review and Feedback</p>
-        <p>- Evaluation, Feedback, and Certification</p>
-      </div>
-    )}
-  </div>
-</div>
-
-
-      <footer className="footer">
-        <div className="footer-container">
-          <div className="footer-content">
-            <h2 className="footer-title">Stay Connected</h2>
-            <p className="footer-description">
-              Get the latest updates and notifications about our upcoming events
-              and training sessions.
-            </p>
-            <form className="footer-form">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="footer-input"
-                required
-              />
-              <button type="submit" className="footer-button">
-                Notify Me
-              </button>
-            </form>
+      <section id="connect">
+        <footer className="footer">
+          <div className="footer-container">
+            <div className="footer-content">
+              <h2 className="footer-title">Stay Connected</h2>
+              <p className="footer-description">
+                Get the latest updates and notifications about our upcoming
+                events and training sessions.
+              </p>
+              <form className="footer-form">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  className="footer-input"
+                  required
+                />
+                <button type="submit" className="footer-button">
+                  Notify Me
+                </button>
+              </form>
+            </div>
           </div>
-        </div>
-        <div className="footer-bottom">
-          <p>© 2024 Your Company. All Rights Reserved.</p>
-        </div>
-      </footer>
+          <div className="footer-bottom">
+            <p>© 2024 Your Company. All Rights Reserved.</p>
+          </div>
+        </footer>
+      </section>
     </div>
   );
 }
