@@ -11,11 +11,28 @@ body {
   line-height: 1.6;
 }
 
+.map-container {
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
 
-
-
-/* Overall Schedule Container */
+@media screen and (max-width: 768px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+  .map-container {
+    border-radius: 8px;
+  }
+}
 
 /* Footer Styling */
 .footer {
@@ -143,7 +160,7 @@ body {
     width: 100%;
     margin-bottom: 10px;
   }
-  .footer-title{
+  .footer-title {
     font-size: 1.5rem;
   }
 
