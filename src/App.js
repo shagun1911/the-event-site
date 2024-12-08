@@ -144,9 +144,9 @@ function App() {
               <p>
                 <span className="bold">Email:</span> shiveshs@mnnit.ac.in
               </p>
-              <p>
+              {/* <p>
                 <span className="bold">Mobile No:</span> 9005688273
-              </p>
+              </p> */}
               {/* <p>
                 <span className="bold">Address:</span> Department of
                 Biotechnology, Motilal Nehru National Institute of Technology
@@ -165,9 +165,9 @@ function App() {
               <p>
                 <span className="bold">Email:</span> sameers@mnnit.ac.in
               </p>
-              <p>
+              {/* <p>
                 <span className="bold">Mobile No:</span> 9889864633
-              </p>
+              </p> */}
             </div>
           </div>
           <div className="speaker">
@@ -180,9 +180,9 @@ function App() {
               <p>
                 <span className="bold">Email:</span> himanshu@cograd.in
               </p>
-              <p>
+              {/* <p>
                 <span className="bold">Mobile No:</span> 9580370547
-              </p>
+              </p> */}
               {/* <p>
                 <span className="bold">Address:</span> Cograd Tech Village,
                 Noida
@@ -199,9 +199,9 @@ function App() {
               <p>
                 <span className="bold">Email:</span> saurabh@cograd.in
               </p>
-              <p>
+              {/* <p>
                 <span className="bold">Mobile No:</span> 8077981379
-              </p>
+              </p> */}
               {/* <p>
                 <span className="bold">Address:</span> Cograd Tech Village,
                 Noida
