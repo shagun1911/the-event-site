@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import "./App.css";
 import Schedule from "./Schedule";
 import Navbar from "./Navbar";
+import VenueSection from "./VenueSection";
+import SpeakersSection from "./Speakers";
 
 function App() {
   const [activeDay, setActiveDay] = useState(null);
@@ -69,119 +71,12 @@ function App() {
       </section>
 
       {/* Venue Section */}
-      <section id="venue" className="venue">
-        <h2>Venue: MNNIT Allahabad</h2>
-
-        {/* Venue Images Section */}
-        <div className="venue-images">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi4xIJrhPdUfd8vlYgzfKjG68uRhGDRk1_Eg&s"
-            alt="MNNIT Venue"
-            className="venue-image"
-          />
-          <img
-            src="https://www.mnnit.ac.in/dic2020/aboutus.png"
-            alt="Venue View"
-            className="venue-image"
-          />
-          <img
-            src="https://www.mnnit.ac.in/swo/images/institute/6.jpg"
-            alt="Venue View"
-            className="venue-image"
-          />
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Lecture_Hall_Complex_MNNIT.jpg/220px-Lecture_Hall_Complex_MNNIT.jpg"
-            alt="Lecture Hall"
-            className="venue-image"
-          />
-        </div>
-
-        {/* Map Section */}
-      </section>
+      <VenueSection />
       <Schedule />
 
       {/* Speakers Section */}
-      <section id="speakers">
-        <h2>Experts</h2>
-        <div className="speakers-container">
-          <div className="speaker">
-            <img src="" alt="Lead-cordinator 1" />
-            <div className="speaker-info">
-              <h3>Dr. Shivesh Sharma</h3>
-              <p>
-                <span className="bold">Designation:</span> Professor, Department
-                of Biotechnology, MNNIT Allahabad
-              </p>
-              <p>
-                <span className="bold">Email:</span> shiveshs@mnnit.ac.in
-              </p>
-              {/* <p>
-                <span className="bold">Mobile No:</span> 9005688273
-              </p> */}
-              {/* <p>
-                <span className="bold">Address:</span> Department of
-                Biotechnology, Motilal Nehru National Institute of Technology
-                Allahabad, Prayagraj – 211004, India
-              </p> */}
-            </div>
-          </div>
-          <div className="speaker">
-            <img src="speaker2.jpg" alt="co-investigator" />
-            <div className="speaker-info">
-              <h3>Dr. Sameer Srivastava</h3>
-              <p>
-                <span className="bold">Designation:</span> Assistant Professor,
-                Department of Biotechnology, MNNIT Allahabad
-              </p>
-              <p>
-                <span className="bold">Email:</span> sameers@mnnit.ac.in
-              </p>
-              {/* <p>
-                <span className="bold">Mobile No:</span> 9889864633
-              </p> */}
-            </div>
-          </div>
-          <div className="speaker">
-            <img src="speaker3.jpg" alt="Lead-cordinator 2" />
-            <div className="speaker-info">
-              <h3>Mr. Himanshu Chaurasia</h3>
-              <p>
-                <span className="bold">Designation:</span> CEO, Cograd
-              </p>
-              <p>
-                <span className="bold">Email:</span> himanshu@cograd.in
-              </p>
-              {/* <p>
-                <span className="bold">Mobile No:</span> 9580370547
-              </p> */}
-              {/* <p>
-                <span className="bold">Address:</span> Cograd Tech Village,
-                Noida
-              </p> */}
-            </div>
-          </div>
-          <div className="speaker">
-            <img src="speaker4.jpg" alt="co-investigator" />
-            <div className="speaker-info">
-              <h3>Mr. Saurabh Yadav</h3>
-              <p>
-                <span className="bold">Designation:</span> COO, Cograd
-              </p>
-              <p>
-                <span className="bold">Email:</span> saurabh@cograd.in
-              </p>
-              {/* <p>
-                <span className="bold">Mobile No:</span> 8077981379
-              </p> */}
-              {/* <p>
-                <span className="bold">Address:</span> Cograd Tech Village,
-                Noida
-              </p> */}
-            </div>
-          </div>
-        </div>
-      </section>
 
+      <SpeakersSection />
       <section id="location">
         <div className="map-container">
           <h3>Location</h3>

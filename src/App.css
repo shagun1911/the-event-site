@@ -13,7 +13,6 @@ body {
 
 /* Navbar */
 
-
 /* Hero Section */
 .hero {
   position: relative;
@@ -50,7 +49,6 @@ body {
 .hero p {
   font-size: 18px;
   margin-bottom: 30px;
-  
 }
 
 .cta-button {
@@ -155,212 +153,8 @@ body {
   color: #333;
 }
 
-/* Venue Section */
-.venue {
-  padding: 60px 20px;
-  background-color: #ffffff;
-  text-align: center;
-  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-}
-
-.venue h2 {
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  color: #333;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  line-height: 1.4;
-  position: relative;
-}
-
-.venue h2:hover {
-  cursor: pointer;
-}
-
-.venue-images {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 20px;
-}
-
-.venue-image {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.venue-image:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.2);
-}
-
-.map-container {
-  margin-top: 40px;
-  text-align: center;
-  font-size: 22px;
-  font-weight: bold;
-  padding-bottom: 20px;
-  color: #333;
-}
-
-.map-container h3 {
-  font-size: 40px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #121416;
-}
-
-.map-container h3::after {
-  content: "";
-  display: block;
-  width: 200px;
-  height: 4px;
-  background-color: red;
-  margin: 10px auto 0;
-}
-
-iframe {
-  border: 0;
-  width: 100%;
-  height: 450px;
-  border-radius: 8px;
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 36px;
-  }
-
-  .cta-button {
-    font-size: 16px;
-    padding: 12px 30px;
-  }
-
-  .event-info {
-    flex-direction: column;
-  }
-
-  .venue-images {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .venue-image {
-    max-width: 90%;
-  }
-}
-
-.speakers {
-  padding: 40px 20px;
-}
-
-h2 {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 30px;
-  text-transform: uppercase;
-  font-weight: 700;
-  border-bottom: 3px solid #f44336;
-  display: inline-block;
-  text-align: center;
-
-  padding-bottom: 10px;
-}
-
-/* Speaker container */
-.speakers-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-  margin-top: 30px;
-}
-
-/* Individual speaker box */
-.speaker {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  width: 300px;
-  text-align: left;
-  transform: translateY(0);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  padding: 20px;
-  position: relative;
-  margin: 10px;
-}
-
-.speaker:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-}
-
-.speaker img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 15px;
-}
-
-.speaker-info h3 {
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.speaker-info p {
-  font-size: 1rem;
-  color: #555;
-  margin: 5px 0;
-}
-
-/* Bold important details */
-.speaker-info .bold {
-  font-weight: 600;
-  color: #333;
-}
-
-/* Link Styling */
-.speaker-info a {
-  text-decoration: none;
-  color: #007bff;
-  font-weight: 500;
-}
-
-.speaker-info a:hover {
-  text-decoration: underline;
-}
-
-/* Adding a subtle hover effect to speaker's name */
-.speaker-info h3:hover {
-  color: #007bff;
-}
-
-/* Responsive design for smaller screens */
-@media screen and (max-width: 768px) {
-  .speakers-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .speaker {
-    width: 90%;
-  }
-}
 
 /* Overall Schedule Container */
-
 
 /* Footer Styling */
 .footer {
