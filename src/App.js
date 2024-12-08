@@ -217,10 +217,10 @@ function App() {
       <div className="schedule-container">
         <h2 className="schedule-heading">Training Schedule</h2>
 
-        {/* Introductory Note for Batch Information */}
         <p className="schedule-note">
           The 5-day training program will be conducted in two batches:
         </p>
+
         <ul className="batch-info">
           <li>
             <strong>Batch 1:</strong> 9th to 13th December
@@ -230,7 +230,6 @@ function App() {
           </li>
         </ul>
 
-        {/* Header with buttons for each day */}
         <div className="schedule-header">
           <button
             onClick={() => toggleSessions("day1")}
@@ -264,7 +263,6 @@ function App() {
           </button>
         </div>
 
-        {/* Content for the selected day */}
         <div className="schedule-content">
           {activeDay === "day1" && (
             <div className="sessions">
