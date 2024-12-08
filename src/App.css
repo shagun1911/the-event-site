@@ -16,7 +16,7 @@ body {
   position: relative;
   overflow: hidden;
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
 iframe {
@@ -25,12 +25,33 @@ iframe {
   border: none;
 }
 
+h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+@media screen and (max-width: 1024px) {
+  h3 {
+    font-size: 1.75rem;
+    margin-bottom: 15px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   h3 {
     font-size: 1.5rem;
+    margin-bottom: 12px;
   }
   .map-container {
     border-radius: 8px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
   }
 }
 
