@@ -48,7 +48,10 @@ function App() {
               Prayagraj
             </p>
           </p>
-          <a href="#download-app" className="cta-button">
+          <a
+            href="https://drive.google.com/file/d/1pGvjs-Hjv0uRKh5KggJCmWNH92B4x2HY/view?usp=sharing "
+            className="cta-button"
+          >
             Download App
           </a>
         </div>
