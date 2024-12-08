@@ -1,6 +1,8 @@
 // eslint-disable-next-line jsx-a11y/iframe-has-title
 import React, { useState } from "react";
 import "./App.css";
+import Schedule from "./Schedule";
+import Navbar from "./Navbar";
 
 function App() {
   const [activeDay, setActiveDay] = useState(null);
@@ -12,29 +14,7 @@ function App() {
   };
   return (
     <div className="container">
-      {/* Header Section */}
-      <header className="header">
-        <div className="logo">R.I.S.E.</div>
-        <nav>
-          <ul className="nav-links">
-            <li>
-              <a href="#about">About</a>
-            </li>
-            <li>
-              <a href="#venue">Venue</a>
-            </li>
-            <li>
-              <a href="#speakers">Speakers</a>
-            </li>
-            <li>
-              <a href="#schedule">Schedule</a>
-            </li>
-            <li>
-              <a href="#connect">Connect</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+      <Navbar />
 
       {/* Hero Section */}
       <section className="hero">
@@ -42,7 +22,7 @@ function App() {
           <h1>Redefining Innovative Strategies in Education :</h1>
           <h1> A Journey Towards Saksham Bharat</h1>
           <p>
-            <span className="highlighted-date">09-20 December</span>
+            <span className="highlighted-date">09-20 December, 2024</span>
             <p>
               Motilal Nehru National Institute of Technology, Allahabad, U.P.
             </p>
@@ -117,23 +97,12 @@ function App() {
         </div>
 
         {/* Map Section */}
-        <div className="map-container">
-          <h3>Location</h3>
-
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31780.785464529556!2d81.84837667611749!3d25.43584174427693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39818042f8e283f9%3A0xf3be4a7d9fd1d9c9!2sMotilal%20Nehru%20National%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1638497648691!5m2!1sen!2sin"
-            width="100%"
-            height="450"
-            style={{ border: 0 }}
-            allowFullScreen=""
-            loading="lazy"
-          />
-        </div>
       </section>
+      <Schedule />
 
       {/* Speakers Section */}
       <section id="speakers">
-        <h2>Co-ordinators</h2>
+        <h2>Experts</h2>
         <div className="speakers-container">
           <div className="speaker">
             <img src="" alt="Lead-cordinator 1" />
@@ -213,158 +182,18 @@ function App() {
         </div>
       </section>
 
-      <section id="schedule">
-        <div className="schedule-container">
-          <h2 className="schedule-heading">Training Schedule</h2>
+      <section id="location">
+        <div className="map-container">
+          <h3>Location</h3>
 
-          <p className="schedule-note">
-            The 5-day training program will be conducted in two batches:
-          </p>
-
-          <ul className="batch-info">
-            <li>
-              <strong>Batch 1:</strong> 9th to 13th December
-            </li>
-            <li>
-              <strong>Batch 2:</strong> 16th to 20th December
-            </li>
-          </ul>
-
-          <div className="schedule-header">
-            <button
-              onClick={() => toggleSessions("day1")}
-              className={activeDay === "day1" ? "active" : ""}
-            >
-              Day 1
-            </button>
-            <button
-              onClick={() => toggleSessions("day2")}
-              className={activeDay === "day2" ? "active" : ""}
-            >
-              Day 2
-            </button>
-            <button
-              onClick={() => toggleSessions("day3")}
-              className={activeDay === "day3" ? "active" : ""}
-            >
-              Day 3
-            </button>
-            <button
-              onClick={() => toggleSessions("day4")}
-              className={activeDay === "day4" ? "active" : ""}
-            >
-              Day 4
-            </button>
-            <button
-              onClick={() => toggleSessions("day5")}
-              className={activeDay === "day5" ? "active" : ""}
-            >
-              Day 5
-            </button>
-          </div>
-
-          <div className="schedule-content">
-            {activeDay === "day1" && (
-              <div className="sessions">
-                <h3>Day 1: Inauguration and Orientation</h3>
-                <p>
-                  <strong>Session 1:</strong> Competency Frameworks Overview
-                </p>
-                <p>- Principles and Practices of Competency-Based Education</p>
-                <p>- Understanding and Applying Competency-Based Frameworks</p>
-                <p>
-                  <strong>Session 2:</strong> Developing Curriculum &
-                  Assessments
-                </p>
-                <p>- Tools and Techniques for Curriculum Development</p>
-                <p>- Designing Effective Curriculum and Assessments</p>
-              </div>
-            )}
-
-            {activeDay === "day2" && (
-              <div className="sessions">
-                <h3>Day 2: Digital Pedagogy Innovations</h3>
-                <p>
-                  <strong>Session 3:</strong> Leveraging Technology for
-                  Effective Teaching
-                </p>
-                <p>
-                  - Digital Tools, Platforms, and AI-Based Learning Applications
-                </p>
-                <p>
-                  <strong>Session 4:</strong> AI in the Classroom
-                </p>
-                <p>- Practical Applications of AI and Digital Tools</p>
-                <p>- Hands-On Training with AI Tools</p>
-                <p>
-                  <strong>Session 5:</strong> Digital Classroom Management
-                </p>
-                <p>- Managing a Tech-Enhanced Classroom</p>
-                <p>- Best Practices for Digital Engagement</p>
-              </div>
-            )}
-
-            {activeDay === "day3" && (
-              <div className="sessions">
-                <h3>Day 3: Social-Emotional Learning (SEL)</h3>
-                <p>
-                  <strong>Session 6:</strong> Fostering Emotional and Social
-                  Competencies
-                </p>
-                <p>- Techniques for Building SEL Skills in Students</p>
-                <p>
-                  <strong>Session 7:</strong> Building Inclusive Classrooms
-                </p>
-                <p>- Strategies for Inclusive Education</p>
-                <p>
-                  - Creating a Supportive and Inclusive Learning Environment
-                </p>
-                <p>
-                  <strong>Session 8:</strong> Reflective Practices and
-                  Self-Assessment
-                </p>
-                <p>- Methods for Teacher Self-Assessment</p>
-                <p>- Enhancing Teaching Effectiveness Through Reflection</p>
-              </div>
-            )}
-
-            {activeDay === "day4" && (
-              <div className="sessions">
-                <h3>Day 4: Continuous Professional Development</h3>
-                <p>
-                  <strong>Session 9:</strong> Professional Growth Plans
-                </p>
-                <p>
-                  - Designing and Implementing Personalized Development Plans
-                </p>
-                <p>
-                  <strong>Session 10:</strong> Innovative Teaching Strategies
-                </p>
-                <p>- New Pedagogical Approaches</p>
-                <p>- Project-Based and Inquiry-Based Learning</p>
-                <p>
-                  <strong>Session 11:</strong> Experiential Learning Techniques
-                </p>
-                <p>- Hands-on Learning Approaches</p>
-                <p>- Techniques for Experiential Learning</p>
-              </div>
-            )}
-
-            {activeDay === "day5" && (
-              <div className="sessions">
-                <h3>Day 5: Collaborative Learning and Feedback</h3>
-                <p>
-                  <strong>Session 12:</strong> Team Activities and Peer Feedback
-                </p>
-                <p>- Enhancing Collaboration Skills Among Teachers</p>
-                <p>
-                  <strong>Closing Session:</strong> Review and Certification
-                </p>
-                <p>- Program Review and Feedback</p>
-                <p>- Evaluation, Feedback, and Certification</p>
-              </div>
-            )}
-          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31780.785464529556!2d81.84837667611749!3d25.43584174427693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39818042f8e283f9%3A0xf3be4a7d9fd1d9c9!2sMotilal%20Nehru%20National%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1638497648691!5m2!1sen!2sin"
+            width="100%"
+            height="450"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+          />
         </div>
       </section>
 
