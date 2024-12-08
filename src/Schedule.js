@@ -97,7 +97,7 @@ const Schedule = () => {
       slot: "V",
       time: "03:45 PM to 05:15 PM",
       topic: "CBL: Traditional vs Competitive Mathematics",
-      resourcePerson: "Mr. Mukesh Kumar (MNNIT Allahabad)",
+      resourcePerson: "Prof. Mukesh Kumar (MNNIT Allahabad)",
     },
 
     {
@@ -257,7 +257,7 @@ const Schedule = () => {
                   {/* <td>{session.slot}</td> */}
                   <td>{session.time}</td>
                   <td>{session.topic}</td>
-                  <td>{session.resourcePerson || "N/A"}</td>
+                  <td>{session.resourcePerson || "-"}</td>
                 </tr>
               ))}
             </tbody>

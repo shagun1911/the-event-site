@@ -36,11 +36,11 @@ const speakersData = [
 const SpeakersSection = () => {
   return (
     <section id="speakers" className="speakers">
-      <h2>Experts</h2>
+      <h2>Organizing Team</h2>
       <div className="speakers-container">
         {speakersData.map((speaker) => (
           <div key={speaker.id} className="speaker">
-            <img src={speaker.image} alt={`Photo of ${speaker.name}`} />
+            {/* <img src={speaker.image} alt={`Photo of ${speaker.name}`} /> */}
             <div className="speaker-info">
               <h3>{speaker.name}</h3>
               <p>

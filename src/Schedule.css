@@ -11,7 +11,6 @@
   font-weight: bold;
   margin-bottom: 20px;
   color: #2c3e50;
-  text-transform: uppercase;
   border-bottom: 3px solid #ff2c5e;
   display: inline-block;
   padding-bottom: 8px;
@@ -129,6 +128,9 @@ button.active {
 }
 
 @media (max-width: 768px) {
+  .schedule-heading {
+    font-size: 1.5rem;
+  }
   .schedule-container {
     padding: 15px 8px;
   }
