@@ -42,10 +42,9 @@ function App() {
           <h1>Redefining Innovative Strategies in Education :</h1>
           <h1> A Journey Towards Saksham Bharat</h1>
           <p>
-            09-20 December
+            <span className="highlighted-date">09-20 December</span>
             <p>
-              Motilal Nehru National Institute of Technology Allahabad,
-              Prayagraj
+              Motilal Nehru National Institute of Technology, Allahabad, U.P.
             </p>
           </p>
           <a
