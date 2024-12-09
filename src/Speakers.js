@@ -11,7 +11,7 @@ const speakersData = [
   },
   {
     id: 2,
-    name: "Dr. Sameer Srivastava",
+    name: "Dr. Sameer Srivastava (Co-Coordinator)",
     designation:
       "Assistant Professor, Department of Biotechnology, MNNIT Allahabad",
     email: "sameers@mnnit.ac.in",
