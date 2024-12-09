@@ -223,6 +223,7 @@ const Schedule = () => {
     <section id="schedule">
       <div className="schedule-container">
         <h2 className="schedule-heading">Schedule</h2>
+        <p style={{marginTop: '0.5rem', marginBottom: '0.5rem'}}>Training program for the Teachers of PM SHRI JNVs </p>
         <div className="batch-buttons">
           <button
             className={activeBatch === "batch1" ? "active" : ""}
