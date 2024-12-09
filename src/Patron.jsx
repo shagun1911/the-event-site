@@ -4,7 +4,7 @@ import "./Speakers.css";
 const patronssData = [
   {
     id: 1,
-    name: "Dr. Shivesh Sharma",
+    name: "Prof. R S Verma",
     designation: "Director, MNNIT Allahabad",
     email: "shiveshs@mnnit.ac.in",
     image: "speaker1.jpg",
@@ -23,9 +23,6 @@ const SpeakersSection = () => {
               <h3>{speaker.name}</h3>
               <p>
                 <span className="bold">Designation:</span> {speaker.designation}
-              </p>
-              <p>
-                <span className="bold">Email:</span> {speaker.email}
               </p>
             </div>
           </div>
