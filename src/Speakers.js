@@ -4,7 +4,7 @@ import "./Speakers.css";
 const speakersData = [
   {
     id: 1,
-    name: "Dr. Shivesh Sharma",
+    name: "Dr. Shivesh Sharma (Coordinator)",
     designation: "Professor, Department of Biotechnology, MNNIT Allahabad",
     email: "shiveshs@mnnit.ac.in",
     image: "speaker1.jpg",
