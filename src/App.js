@@ -25,8 +25,9 @@ function App() {
       <AboutEventSection />
       <VenueSection />
       <Schedule />
-      <SpeakersSection />
       <PatronSection />
+      <SpeakersSection />
+      
 
       <section id="location">
         <div className="map-container">
