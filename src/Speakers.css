@@ -125,10 +125,6 @@ h2 {
     padding: 15px; /* Adjust padding for smaller screens */
   }
 
-  .speaker img {
-    height: 180px;
-  }
-
   .speaker-info h3 {
     font-size: 1.5rem;
   }
