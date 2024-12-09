@@ -4,7 +4,7 @@ import "./Speakers.css";
 const patronssData = [
   {
     id: 1,
-    name: "Prof. R S Verma",
+    name: "Prof. R. S. Verma",
     designation: "Director, MNNIT Allahabad",
     email: "shiveshs@mnnit.ac.in",
     image: "speaker1.jpg",
