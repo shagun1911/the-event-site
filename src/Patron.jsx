@@ -7,7 +7,7 @@ const patronssData = [
     name: "Prof. R. S. Verma",
     designation: "Director, MNNIT Allahabad",
     email: "shiveshs@mnnit.ac.in",
-    image: "speaker1.jpg",
+    image: "/51101.jpeg",
   }
 ];
 
@@ -18,7 +18,7 @@ const SpeakersSection = () => {
       <div className="speakers-container">
         {patronssData.map((speaker) => (
           <div key={speaker.id} className="speaker">
-            {/* <img src={speaker.image} alt={`Photo of ${speaker.name}`} /> */}
+            <img src={speaker.image} alt={`Photo of ${speaker.name}`} />
             <div className="speaker-info">
               <h3>{speaker.name}</h3>
               <p>
