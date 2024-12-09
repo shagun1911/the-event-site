@@ -8,6 +8,7 @@ import SpeakersSection from "./Speakers";
 import HeroSection from "./Hero";
 import AboutEventSection from "./Event";
 import Feedback from "./Feedback";
+import PatronSection from "./Patron";
 
 function App() {
   const [activeDay, setActiveDay] = useState(null);
@@ -25,6 +26,7 @@ function App() {
       <VenueSection />
       <Schedule />
       <SpeakersSection />
+      <PatronSection />
 
       <section id="location">
         <div className="map-container">
