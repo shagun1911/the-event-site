@@ -32,7 +32,6 @@ button {
   font-weight: 600;
   color: #ffffff;
   background-color: #a5052a;
-
   border: none;
   border-radius: 30px;
   cursor: pointer;
@@ -49,7 +48,6 @@ button:hover {
 button.active {
   font-weight: bold;
   background-color: #e80d40;
-
   box-shadow: 0 6px 25px rgba(35, 110, 156, 0.5);
 }
 
@@ -66,6 +64,7 @@ button.active {
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  table-layout: fixed; /* Ensures equal column widths */
 }
 
 .schedule-table thead {
@@ -73,21 +72,33 @@ button.active {
   color: #ffffff;
 }
 
-.schedule-table th {
-  padding: 12px 15px;
-  text-align: left;
-  font-size: 0.95rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
+.schedule-table th, 
 .schedule-table td {
   padding: 12px 15px;
   font-size: 0.95rem;
-  color: #555555;
   text-align: left;
   border-bottom: 1px solid #eaeaea;
+  word-wrap: break-word; /* Prevents content overflow */
+}
+
+.schedule-table th:first-child,
+.schedule-table td:first-child {
+  width: 20%; /* Date column */
+}
+
+.schedule-table th:nth-child(2),
+.schedule-table td:nth-child(2) {
+  width: 20%; /* Time column */
+}
+
+.schedule-table th:nth-child(3),
+.schedule-table td:nth-child(3) {
+  width: 40%; /* Topic column */
+}
+
+.schedule-table th:last-child,
+.schedule-table td:last-child {
+  width: 20%; /* Resource Person column */
 }
 
 .schedule-table tr:nth-child(even) {
@@ -98,38 +109,14 @@ button.active {
   transition: background-color 0.3s ease;
 }
 
-.schedule-table td:first-child,
-.schedule-table th:first-child {
-  text-align: left;
-}
-
-.schedule-table td:last-child,
-.schedule-table th:last-child {
-  text-align: left;
-}
-
-.coming-soon {
-  font-size: 1.4rem;
-  font-weight: 500;
-  color: #e74c3c;
-  margin-top: 20px;
-  animation: pulse 1.5s infinite ease-in-out;
-}
-
-@keyframes pulse {
-  0%,
-  100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.8;
-  }
-}
-
 @media (max-width: 768px) {
-  .schedule-heading {
-    font-size: 1.5rem;
+  .schedule-table th,
+  .schedule-table td {
+    padding: 10px 12px;
+    font-size: 0.9rem;
   }
+
+
   .schedule-container {
     padding: 15px 8px;
   }

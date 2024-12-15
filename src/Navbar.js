@@ -30,7 +30,7 @@ const Navbar = () => {
           </li>
           <li>
             <a href="#speakers" onClick={() => setIsOpen(false)}>
-              Experts
+             Team
             </a>
           </li>
           <li>
