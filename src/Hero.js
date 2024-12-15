@@ -12,7 +12,7 @@ const HeroSection = () => {
           <p>Motilal Nehru National Institute of Technology, Allahabad, U.P.</p>
         </p>
         <a
-          href="https://drive.google.com/file/d/1pGvjs-Hjv0uRKh5KggJCmWNH92B4x2HY/view?usp=sharing"
+          href="https://docs.google.com/document/d/15D9qi0DypTuqy1GiC63rtk9RSmA_NA8C87JisiN8QPs/edit?usp=drivesdk"
           className="cta-button"
         >
           Download App
