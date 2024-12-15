@@ -292,6 +292,14 @@ const Schedule = () => {
       resourcePerson: "Dr. Tripti Singh (MNNIT Allahabad)",
     },
     {
+    date: "16.12.24",
+    day: "Day 1",
+    slot: "X",
+    time: "05:15 PM to 05:45 PM",
+    topic: "Daily feedback session",
+    resourcePerson: "-",
+  },
+    {
       date: "17.12.24",
       day: "Day 2",
       slot: "I",
@@ -346,6 +354,14 @@ const Schedule = () => {
       time: "03:45 PM to 05:15 PM",
       topic: "Visit and Interaction with Faculty of Department of CS",
       resourcePerson: "MNNIT Allahabad",
+    },
+    {
+      date: "17.12.24",
+      day: "Day 2",
+      slot: "VIII",
+      time: "05:15 PM to 05:45 PM",
+      topic: "Daily feedback session",
+      resourcePerson: "-",
     },
     {
       date: "18.12.24",
@@ -404,6 +420,22 @@ const Schedule = () => {
       resourcePerson: "Chelsea Dean (Co-Founder, Tomo Club)",
     },
     {
+      date: "18.12.24",
+      day: "Day 1",
+      slot: "VIII",
+      time: "05:15 PM to 05:45 PM",
+      topic: "Daily feedback session",
+      resourcePerson: "-",
+    },
+    {
+      date: "18.12.24",
+      day: "Day 3",
+      slot: "IX",
+      time: "05:45 PM to 08:00 PM",
+      topic: "Visit to sangam prayag raj",
+      resourcePerson: "-",
+    },
+    {
       date: "19.12.24",
       day: "Day 4",
       slot: "I",
@@ -460,6 +492,14 @@ const Schedule = () => {
       resourcePerson: "",
     },
     {
+      date: "19.12.24",
+      day: "Day 4",
+      slot: "VIII",
+      time: "05:15 PM to 05:45 PM",
+      topic: "Daily feedback session",
+      resourcePerson: "-",
+    },
+    {
       date: "20.12.24",
       day: "Day 5",
       slot: "I",
@@ -514,6 +554,14 @@ const Schedule = () => {
       time: "03:45 PM to 05:15 PM",
       topic: "Closing & Certificate Distribution Ceremony",
       resourcePerson: "",
+    },
+    {
+      date: "20.12.24",
+      day: "Day 5",
+      slot: "VIII",
+      time: "05:15 PM to 05:45 PM",
+      topic: "Daily feedback session",
+      resourcePerson: "-",
     },
   ];
   
