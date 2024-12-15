@@ -536,8 +536,8 @@ const Schedule = () => {
       day: "Day 5",
       slot: "V",
       time: "02:00 PM to 03:30 PM",
-      topic: "Workshop: Development of Effective Teaching Methods",
-      resourcePerson: "Prof. P.K. Mishra (MNNIT Allahabad)",
+      topic: "ITP: Medha AI",
+      resourcePerson: "Mr. Ravi suthar cograd",
     },
     {
       date: "20.12.24",
