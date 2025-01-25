@@ -6,7 +6,7 @@ const HeroSection = () => {
     <section className="hero">
       <div className="hero-content">
         <h1>Redefining Innovative Strategies in Education :</h1>
-        <h1>A Journey Towards Saksham Bharat</h1>
+        <h1 className="small-text">A Journey Towards Saksham Bharat</h1>
         <p>
           <span className="highlighted-date">09-20 December, 2024</span>
           <p>Motilal Nehru National Institute of Technology, Allahabad, U.P.</p>

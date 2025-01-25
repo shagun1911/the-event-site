@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <header className={`header ${isOpen ? "active" : ""}`}>
-      <div className="logo">R.I.S.E.</div>
+      <div className="logo">R I S E - J N V</div>
       <div className="hamburger" onClick={toggleMenu}>
         <div></div>
         <div></div>
