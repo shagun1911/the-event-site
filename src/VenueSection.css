@@ -22,22 +22,25 @@
 }
 
 .venue-images {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap; /* Ensures all images stay in a single row */
-  gap: 15px;
-  margin-top: 20px;
-  overflow-x: auto; /* Allows horizontal scrolling if images overflow */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 40px auto;
+  max-width: 1200px;
+  padding: 20px;
 }
 
 .venue-image {
   width: 100%;
-  max-width: 300px;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-  transition: none; /* Removed transition */
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+
+
 
 .map-container {
   margin-top: 40px;

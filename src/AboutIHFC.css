@@ -1,0 +1,97 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0;
+  }
+  
+  h1, h2, h3, h4 {
+    color: #2c3e50;
+  }
+  
+  p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  h1.title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 700;
+  }
+  
+  /* Section Styling */
+  .about-ihfc {
+    background-color: white;
+    padding: 40px 0;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    color: #2980b9;
+    margin-top: 40px;
+  }
+  
+  h3 {
+    font-size: 1.6rem;
+    color: #16a085;
+    margin-top: 30px;
+  }
+  
+  h4 {
+    font-size: 1.2rem;
+    color: #d35400;
+    margin-top: 20px;
+  }
+  
+  .collaboration-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .collaboration-table th,
+  .collaboration-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .collaboration-table th {
+    background-color: #2980b9;
+    color: white;
+  }
+  
+  .collaboration-table td {
+    background-color: #f9f9f9;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      width: 90%;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    h3 {
+      font-size: 1.4rem;
+    }
+  }
+  
